@@ -1,0 +1,6 @@
+insert into target.out_sample
+select
+ id as id,
+upper(account_nm) as account_name,
+upper(account_desc) as account_description
+ from source.my_sample
